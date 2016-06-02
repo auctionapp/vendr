@@ -48796,6 +48796,9 @@
 			return _possibleConstructorReturn(this, Object.getPrototypeOf(ItemList).call(this, props));
 		}
 
+		//temp image for now
+
+
 		_createClass(ItemList, [{
 			key: 'renderList',
 			value: function renderList() {
@@ -48896,6 +48899,9 @@
 
 	  _createClass(Item, [{
 	    key: 'render',
+
+
+	    //temp image for now
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',

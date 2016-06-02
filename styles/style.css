@@ -8,18 +8,5 @@ ul{
   overflow: scroll;
   font-color: green;
 }
-.app{
-	height: 100px;
-	width: 100%;
-	display: inline;
-}
-.topnav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 
-}
-.navItem{
-  margin:2px; 
-}
 

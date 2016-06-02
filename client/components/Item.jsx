@@ -3,8 +3,7 @@ import { connect } from 'react-redux'
 
 class Item extends React.Component {
 
-
-
+//temp image for now
   render() {
     return (
       <div>

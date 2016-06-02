@@ -7,7 +7,7 @@ class ItemList extends Component {
 	
 	}
 
-
+//temp image for now
 	renderList() {
 	   return this.props.items.map((item) => {
 	   	return (
