@@ -13,14 +13,15 @@ export default class Navbar extends React.Component {
 
   render() {
   	return (
-          <div className='app'>
+          <div className="pure-menu pure-menu-horizontal pure-menu-scrollable">
             <h2>TITLE</h2>
-            <ul>
-              <li><Link to="landing">Home</Link></li>
-              <li><Link to="sellitem">Sell an Item</Link></li>
-              <li><Link to="message">Messages</Link></li>
-              <li><SearchBar /></li>
-              <li><Link to="signin">Signin</Link></li>
+            <ul className="pure-menu-list">
+              <li className="pure-menu-item"><Link className="pure-menu-link" to="landing">Home</Link></li>
+              <li className="pure-menu-item"><Link className="pure-menu-link" to="sellitem">Sell an Item</Link></li>
+              <li className="pure-menu-item"><Link className="pure-menu-link" to="message">Messages</Link></li>
+              <li className="pure-menu-item"><SearchBar /></li>
+              <li className="pure-menu-item"><Link className="pure-menu-link" to="signin">Signin</Link></li>
+              <li className="pure-menu-item"><Link className="pure-menu-link" to="searchresults">results</Link></li>
               {this.props.children}
             </ul>  
           </div>

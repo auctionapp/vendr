@@ -1,6 +1,69 @@
+
 .messages {
   width: 200px;
   height: 300px;
   overflow: scroll;
   font-color: green;
 }
+
+* {margin: 0; padding: 0;}
+ 
+div {
+  margin: 20px;
+}
+ 
+ul {
+  list-style-type: none;
+  width: 500px;
+}
+ 
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ 
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ 
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+ 
+li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+.resultspage{
+  height: 100%;
+  width: 1000px;
+  display: inline;
+}
+
+.resultsitem{
+  height: 500px;
+  width: 100%;
+  float: left;
+  border-style: groove;
+  border-color: black
+
+}
+.listview{
+  position: relative;
+  left:550px;
+  bottom: 150px;
+}
+.image{
+  height: 100px;
+  width:100px;
+}
+
+
+
+
+

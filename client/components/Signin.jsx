@@ -10,7 +10,7 @@ class Signin extends Component {
   render () {
     return (
       <div className='signin'>
-        Sign in or register using Facebook:
+        Signin or register using Facebook:
         <FacebookButton />
       </div>
     );

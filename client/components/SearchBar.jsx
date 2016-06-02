@@ -1,23 +1,32 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import $ from 'jquery';
-
 class SearchBar extends React.Component {
   
-  constructor(prop){
-  	super(prop);
+  constructor(props){
+  	super(props);
   	this.state = {
   		term: ''
     };
   	this.onInputChange = this.onInputChange.bind(this);
+    this.onFormSubmit = this.onFormSubmit.bind(this);
   }	
   
   onInputChange(e){
   	this.setState({term: e.target.value})
   };
 
-  onFormSubmit(){
+  onFormSubmit(event){
     event.preventDefault();
+    var url = '/searchitem/' + this.state.term;
+    console.log(url);
+    $.get(url, function(items){
+        this.props.fetchItems(items)
+      }.bind(this)
+    );
+      this.setState({term: ''});
+
   }
 
 
@@ -39,7 +48,14 @@ class SearchBar extends React.Component {
 
 
 function mapDispatchToProps(dispatch) {
-  return 
+  return {
+     fetchItems: (items) => {
+      dispatch({
+        type:'FETCH_ITEMS',
+        payload: items
+      })
+     }
+  }
 }
 
 

@@ -120,9 +120,22 @@ passport.use(new FacebookStrategy({
 
 //######################### SearchBar Requests ##########################
 
-app.get('/searchItem', (req, res) => {
-  
-}
+app.get('/searchItem/*', (req, res) => {
+    var term = req.url.split("/")
+    console.log(term)
+     Item.where({title: term[2] }).fetchAll()
+     .then(function(items){
+
+       if(!items){
+         Item.fetchAll()
+         .then(function(items){
+          res.send(items)
+         })
+       }
+       console.log(items);
+       res.send(items);
+     })
+});
 
 
 
