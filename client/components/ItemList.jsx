@@ -29,7 +29,6 @@ class ItemList extends Component {
 			</ul>
 		)
 	}
-
 };
 
 
