@@ -1,3 +1,9 @@
+if (process.env.NODE_ENV === 'development') {
+  require('dotenv').config({path: './env/development.env'});
+} else if (process.env.NODE_ENV === 'production') {
+  require('dotenv').config({path: './env/production.env'});
+}
+
 var session = require('express-session');
 var express = require('express');
 var db = require('./db/config');
@@ -30,8 +36,8 @@ exports.io = require('socket.io')(http);
 
 app.use(express.static(__dirname + '/../public'));
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(process.env.PORT, function(){
+  console.log('listening on port:' + process.env.PORT);
 });
 
 require('./socket.js');
@@ -72,7 +78,7 @@ app.get('/toleavefeedback', (req, res) => {
           // 2016-06-12 15:59:22.632
           .then(items => res.status(200).send(items));
       });
-  }  
+  }
   res.status(404);
 });
 
@@ -110,9 +116,9 @@ app.get('/getuserid', (req, res) => {
         res.status(200).send(user);
       });
     return;
-  }     
+  }
   res.sendStatus(404);
-}); 
+});
 
 // ############################## SEARCH ################################
 
@@ -240,7 +246,7 @@ app.post('/sellItem', (req, res) => {
 // ########################### FACEBOOK OAUTH ###########################
 app.get('/auth/facebook',
   passport.authenticate('facebook'));
- 
+
 app.get('/auth/facebook/callback',
   passport.authenticate('facebook', { successRedirect: '/',
                                       failureRedirect: '/' }));
@@ -271,8 +277,8 @@ passport.deserializeUser(function(facebookId, done) {
 
 passport.use(new FacebookStrategy({
     // **you will need to create your own fb developer account and input your own clientID and clientSecret
-    clientID: '523442607845905',
-    clientSecret: '68d549f6999e92b32818e0993b737563',
+    clientID: process.env.FACEBOOK_ID,
+    clientSecret: process.env.FACEBOOK_SECRET,
     callbackURL: "http://localhost:3000/auth/facebook/callback",
     enableProof: true,
     profileFields: ['id', 'displayName', 'gender', 'picture.type(large)', 'emails']
