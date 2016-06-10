@@ -53,7 +53,7 @@ Search Results:
   $ webpack --watch
   ```
 
-  2. Setup your mySQL connection by changing the password within db/config.js to match your local mySQL password:
+  2. Setup your mySQL connection by changing the password within db/config.js to match your local mySQL password
 
   3. In a new terminal window run the following command to start the application:
 
