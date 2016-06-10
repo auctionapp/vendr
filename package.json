@@ -1,5 +1,5 @@
 {
-  "name": "auctionapp",
+  "name": "vendr",
   "version": "1.0.0",
   "description": "a simple auction app",
   "main": "index.html",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/auctionapp/auction-app.git"
+    "url": "git+https://github.com/crypticzoologists/vendr.git"
   },
   "keywords": [
     "auction",
@@ -17,9 +17,9 @@
   "author": "Will Tang, Chris Ng, Daniel Rabinovich",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/auctionapp/auctionapp/issues"
+    "url": "https://github.com/crypticzoologists/vendr/issues"
   },
-  "homepage": "https://github.com/auctionapp/auctionapp#readme",
+  "homepage": "https://github.com/crypticzoologists/vendr#readme",
   "dependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.9.0",
