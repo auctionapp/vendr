@@ -79,6 +79,9 @@ Search Results:
 - Passport
 - Socket.io
 
+<!-- ### Database Schema
+<b> to be added </b> -->
+
 <!-- ## Directory Layout
 ```
 ├── /env/                       # Environment variables
