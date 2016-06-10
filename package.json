@@ -15,7 +15,7 @@
     "ebay"
   ],
   "author": "Will Tang, Chris Ng, Daniel Rabinovich",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/auctionapp/auctionapp/issues"
   },
@@ -40,7 +40,6 @@
     "react": "^15.1.0",
     "react-count-down": "^1.0.1",
     "react-dom": "^15.1.0",
-    "react-facebook-login": "^2.1.4",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.1",
     "react-textarea-autosize": "^4.0.2",
