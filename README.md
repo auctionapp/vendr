@@ -6,13 +6,12 @@
 1. [Usage](#Usage)
 2. [Getting started](#Getting-Started)
   1. [Clone the latest version](#Installing-Dependencies)
-  2. [Install Dependencies](#Installing-Dependencies)
-  3. [Setup Environment Variables](#Environment-Variables)
-  4. [Start the application](#Start-Application)
+  2. [Install dependencies](#Installing-Dependencies)
+  3. [Run the application](#Run-Application)
 3. [Tech Stack](#Tech-Stack)
-4. [Architecture](#Architecture)
-5. [Team](#Team)
-6. [Contributing](#Contributing)
+4. [Team](#Team)
+5. [Contributing](#Contributing)
+6. [License](#License)
 
 ## Usage
 
