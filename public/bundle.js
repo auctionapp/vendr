@@ -30802,19 +30802,19 @@
 
 	var _WatchedItems2 = _interopRequireDefault(_WatchedItems);
 
-	var _Feedback = __webpack_require__(387);
+	var _Feedback = __webpack_require__(386);
 
 	var _Feedback2 = _interopRequireDefault(_Feedback);
 
-	var _LeaveFeedback = __webpack_require__(385);
+	var _LeaveFeedback = __webpack_require__(384);
 
 	var _LeaveFeedback2 = _interopRequireDefault(_LeaveFeedback);
 
-	var _Profile = __webpack_require__(389);
+	var _Profile = __webpack_require__(388);
 
 	var _Profile2 = _interopRequireDefault(_Profile);
 
-	var _PersonalPage = __webpack_require__(391);
+	var _PersonalPage = __webpack_require__(390);
 
 	var _PersonalPage2 = _interopRequireDefault(_PersonalPage);
 
@@ -49859,13 +49859,13 @@
 
 	var _SearchResults2 = _interopRequireDefault(_SearchResults);
 
-	var _Username = __webpack_require__(377);
+	var _Username = __webpack_require__(380);
 
 	var _Username2 = _interopRequireDefault(_Username);
 
 	var _actions = __webpack_require__(366);
 
-	var _CountdownTimer = __webpack_require__(378);
+	var _CountdownTimer = __webpack_require__(377);
 
 	var _CountdownTimer2 = _interopRequireDefault(_CountdownTimer);
 
@@ -50500,7 +50500,7 @@
 
 	var _Item2 = _interopRequireDefault(_Item);
 
-	var _CountdownTimer = __webpack_require__(378);
+	var _CountdownTimer = __webpack_require__(377);
 
 	var _CountdownTimer2 = _interopRequireDefault(_CountdownTimer);
 
@@ -50709,102 +50709,6 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRedux = __webpack_require__(168);
-
-	var _reactRouter = __webpack_require__(190);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Username = function (_Component) {
-	  _inherits(Username, _Component);
-
-	  function Username() {
-	    _classCallCheck(this, Username);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Username).apply(this, arguments));
-	  }
-
-	  _createClass(Username, [{
-	    key: 'componentWillMount',
-	    value: function componentWillMount() {
-	      console.log('in username', this.props.id, this.props.name);
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'username' },
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: 'profile' },
-	          _react2.default.createElement(
-	            'div',
-	            { onClick: this.props.setProfileUser.bind(this, this.props.id), className: 'username-name' },
-	            this.props.name
-	          )
-	        ),
-	        _react2.default.createElement('img', { onClick: this.props.addMessageBox.bind(this, this.props.userId, this.props.id, this.props.name),
-	          src: 'images/message.png', className: 'message-button' })
-	      );
-	    }
-	  }]);
-
-	  return Username;
-	}(_react.Component);
-
-	Username.propTypes = {
-	  id: _react.PropTypes.number.isRequired,
-	  name: _react.PropTypes.string.isRequired
-	};
-
-
-	var mapStateToProps = function mapStateToProps(state) {
-	  return {
-	    userId: state.user.id
-	  };
-	};
-
-	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-	  return {
-	    addMessageBox: function addMessageBox(userId, id, name) {
-	      if (userId != id) {
-	        dispatch({
-	          type: 'NEW_MESSAGE_BOX',
-	          chatter: { id: id, name: name }
-	        });
-	      }
-	    },
-	    setProfileUser: function setProfileUser(current) {
-	      console.log('dispatching current', current);
-	      dispatch({
-	        type: 'SET_PROFILE_USER',
-	        current: current
-	      });
-	    }
-	  };
-	};
-
-	module.exports = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Username);
-
-/***/ },
-/* 378 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
@@ -50813,7 +50717,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactCountDown = __webpack_require__(379);
+	var _reactCountDown = __webpack_require__(378);
 
 	var _reactCountDown2 = _interopRequireDefault(_reactCountDown);
 
@@ -50831,7 +50735,7 @@
 	};
 
 /***/ },
-/* 379 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -50842,7 +50746,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DateBetween = __webpack_require__(380);
+	var _DateBetween = __webpack_require__(379);
 
 	var _DateBetween2 = _interopRequireDefault(_DateBetween);
 
@@ -50899,7 +50803,7 @@
 	module.exports = CountDown;
 
 /***/ },
-/* 380 */
+/* 379 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50960,7 +50864,6 @@
 	module.exports = DateBetween;
 
 /***/ },
-<<<<<<< HEAD
 /* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -51057,8 +50960,6 @@
 	module.exports = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Username);
 
 /***/ },
-=======
->>>>>>> b2facc092b0c5d1e17d9cbb4d3f619825166164c
 /* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -51195,11 +51096,11 @@
 
 	var _actions = __webpack_require__(366);
 
-	var _PopularItems = __webpack_require__(384);
+	var _PopularItems = __webpack_require__(383);
 
 	var _PopularItems2 = _interopRequireDefault(_PopularItems);
 
-	var _LeaveFeedback = __webpack_require__(385);
+	var _LeaveFeedback = __webpack_require__(384);
 
 	var _LeaveFeedback2 = _interopRequireDefault(_LeaveFeedback);
 
@@ -51242,125 +51143,6 @@
 
 /***/ },
 /* 383 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(38);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	var _reactRedux = __webpack_require__(168);
-
-	var _jquery = __webpack_require__(315);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	var _actions = __webpack_require__(366);
-
-	var _ItemEntry = __webpack_require__(376);
-
-	var _ItemEntry2 = _interopRequireDefault(_ItemEntry);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var ListedItems = function (_Component) {
-	  _inherits(ListedItems, _Component);
-
-	  function ListedItems() {
-	    _classCallCheck(this, ListedItems);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ListedItems).apply(this, arguments));
-	  }
-
-	  _createClass(ListedItems, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      this.props.getUserId();
-	      this.getListedItems();
-	    }
-	  }, {
-	    key: 'getListedItems',
-	    value: function getListedItems() {
-	      _jquery2.default.ajax({
-	        method: 'GET',
-	        url: '/getListedItems',
-	        data: { user_id: this.props.user.id },
-	        dataType: 'json',
-	        success: function (data) {
-	          this.props.updateListedItems(data);
-	        }.bind(this)
-	      });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      if (this.props.user.id) {
-	        return _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'listings' },
-	            'Your current listings'
-	          ),
-	          this.props.listedItems.map(function (item) {
-	            return _react2.default.createElement(_ItemEntry2.default, { item: item, key: item.id });
-	          })
-	        );
-	      } else {
-	        return _react2.default.createElement(
-	          'div',
-	          null,
-	          'Sign in to see your listed items!'
-	        );
-	      }
-	    }
-	  }]);
-
-	  return ListedItems;
-	}(_react.Component);
-
-	ListedItems.defaultProps = {
-	  listedItems: []
-	};
-
-
-	var mapStateToProps = function mapStateToProps(state, ownProps) {
-	  return {
-	    user: state.user,
-	    listedItems: state.listedItems
-	  };
-	};
-
-	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-	  return {
-	    getUserId: (0, _actions.checkAuthentication)(dispatch),
-	    updateListedItems: function updateListedItems(data) {
-	      dispatch({
-	        type: 'UPDATE_LISTED_ITEMS',
-	        data: data
-	      });
-	    }
-	  };
-	};
-
-	module.exports = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(ListedItems);
-
-/***/ },
-/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -51471,7 +51253,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(PopularItems);
 
 /***/ },
-/* 385 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -51490,7 +51272,7 @@
 
 	var _reactRedux = __webpack_require__(168);
 
-	var _LeaveFeedbackEntry = __webpack_require__(386);
+	var _LeaveFeedbackEntry = __webpack_require__(385);
 
 	var _LeaveFeedbackEntry2 = _interopRequireDefault(_LeaveFeedbackEntry);
 
@@ -51566,7 +51348,7 @@
 	module.exports = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(LeaveFeedback);
 
 /***/ },
-/* 386 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -51753,7 +51535,7 @@
 	exports.default = LeaveFeedbackEntry;
 
 /***/ },
-/* 387 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -51772,7 +51554,7 @@
 
 	var _reactRedux = __webpack_require__(168);
 
-	var _FeedbackEntry = __webpack_require__(388);
+	var _FeedbackEntry = __webpack_require__(387);
 
 	var _FeedbackEntry2 = _interopRequireDefault(_FeedbackEntry);
 
@@ -51878,7 +51660,7 @@
 	module.exports = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Feedback);
 
 /***/ },
-/* 388 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -51960,7 +51742,7 @@
 	exports.default = FeedbackEntry;
 
 /***/ },
-/* 389 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -51979,11 +51761,11 @@
 
 	var _actions = __webpack_require__(366);
 
-	var _Feedback = __webpack_require__(387);
+	var _Feedback = __webpack_require__(386);
 
 	var _Feedback2 = _interopRequireDefault(_Feedback);
 
-	var _ProfileEntry = __webpack_require__(390);
+	var _ProfileEntry = __webpack_require__(389);
 
 	var _ProfileEntry2 = _interopRequireDefault(_ProfileEntry);
 
@@ -52048,7 +51830,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Profile);
 
 /***/ },
-/* 390 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -52063,7 +51845,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Username = __webpack_require__(377);
+	var _Username = __webpack_require__(380);
 
 	var _Username2 = _interopRequireDefault(_Username);
 
@@ -52116,7 +51898,7 @@
 	exports.default = ProfileEntry;
 
 /***/ },
-/* 391 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -52139,11 +51921,11 @@
 
 	var _WatchedItems2 = _interopRequireDefault(_WatchedItems);
 
-	var _ListedItems = __webpack_require__(383);
+	var _ListedItems = __webpack_require__(391);
 
 	var _ListedItems2 = _interopRequireDefault(_ListedItems);
 
-	var _LeaveFeedback = __webpack_require__(385);
+	var _LeaveFeedback = __webpack_require__(384);
 
 	var _LeaveFeedback2 = _interopRequireDefault(_LeaveFeedback);
 
@@ -52218,6 +52000,125 @@
 	};
 
 	module.exports = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(PersonalPage);
+
+/***/ },
+/* 391 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(38);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _reactRedux = __webpack_require__(168);
+
+	var _jquery = __webpack_require__(315);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	var _actions = __webpack_require__(366);
+
+	var _ItemEntry = __webpack_require__(376);
+
+	var _ItemEntry2 = _interopRequireDefault(_ItemEntry);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ListedItems = function (_Component) {
+	  _inherits(ListedItems, _Component);
+
+	  function ListedItems() {
+	    _classCallCheck(this, ListedItems);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ListedItems).apply(this, arguments));
+	  }
+
+	  _createClass(ListedItems, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.props.getUserId();
+	      this.getListedItems();
+	    }
+	  }, {
+	    key: 'getListedItems',
+	    value: function getListedItems() {
+	      _jquery2.default.ajax({
+	        method: 'GET',
+	        url: '/getListedItems',
+	        data: { user_id: this.props.user.id },
+	        dataType: 'json',
+	        success: function (data) {
+	          this.props.updateListedItems(data);
+	        }.bind(this)
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      if (this.props.user.id) {
+	        return _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'listings' },
+	            'Your current listings'
+	          ),
+	          this.props.listedItems.map(function (item) {
+	            return _react2.default.createElement(_ItemEntry2.default, { item: item, key: item.id });
+	          })
+	        );
+	      } else {
+	        return _react2.default.createElement(
+	          'div',
+	          null,
+	          'Sign in to see your listed items!'
+	        );
+	      }
+	    }
+	  }]);
+
+	  return ListedItems;
+	}(_react.Component);
+
+	ListedItems.defaultProps = {
+	  listedItems: []
+	};
+
+
+	var mapStateToProps = function mapStateToProps(state, ownProps) {
+	  return {
+	    user: state.user,
+	    listedItems: state.listedItems
+	  };
+	};
+
+	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+	  return {
+	    getUserId: (0, _actions.checkAuthentication)(dispatch),
+	    updateListedItems: function updateListedItems(data) {
+	      dispatch({
+	        type: 'UPDATE_LISTED_ITEMS',
+	        data: data
+	      });
+	    }
+	  };
+	};
+
+	module.exports = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(ListedItems);
 
 /***/ }
 /******/ ]);
