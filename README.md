@@ -31,7 +31,7 @@ Search Results:
 
 #### 1. Clone the latest version
 
-  Start by cloning the latest version of Sentimize on your local machine by running:
+  Start by cloning the latest version of Vendr on your local machine by running:
 
   ```sh
   $ git clone https://github.com/crypticzoologists/vendr.git
