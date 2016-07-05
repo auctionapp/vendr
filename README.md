@@ -5,7 +5,7 @@
 ## Table of Contents
 1. [Usage](#Usage)
 2. [Getting started](#Getting-Started)
-  1. [Clone the latest version](#Installing-Dependencies)
+  1. [Clone the latest version](#Install-Dependencies)
   2. [Install dependencies](#Installing-Dependencies)
   3. [Run the application](#Run-Application)
 3. [Tech Stack](#Tech-Stack)
