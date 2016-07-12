@@ -16,16 +16,16 @@
 ## Usage
 
 Landing Page:
-![landing_page](https://raw.githubusercontent.com/crypticzoologists/vendr/master/landing_page.png)
+![landing_page](https://github.com/crypticzoologists/vendr/blob/master/screenshots/landing_page.png?raw=true)
 
 Personal Page:
-![personal_page](https://raw.githubusercontent.com/crypticzoologists/vendr/master/personal_page.png)
+![personal_page](https://raw.githubusercontent.com/crypticzoologists/vendr/master/screenshots/personal_page.png)
 
 Sell an Item:
-![sell_item](https://raw.githubusercontent.com/crypticzoologists/vendr/master/sell_item.png)
+![sell_item](https://raw.githubusercontent.com/crypticzoologists/vendr/master/screenshots/sell_item.png)
 
 Search Results:
-![search_results](https://raw.githubusercontent.com/crypticzoologists/vendr/master/search_results.png)
+![search_results](https://raw.githubusercontent.com/crypticzoologists/vendr/master/screenshots/search_results.png)
 
 ## Getting started
 
